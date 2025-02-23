@@ -1,0 +1,59 @@
+@import url(../index.html);
+body{
+    letter-spacing: -0.03em;
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.hero{
+    height: 765px;
+    background-image: url(../img/pensive-businessman-taking-notes-while-working-laptop-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero__nav{
+    width: 1400px;
+    position: absolute;
+    left: 132px;
+    top: 27px;
+    letter-spacing: -0.03em;
+}
+.hero__nav_a{
+    font-size: 42.41px;
+    line-height: 55.14px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    color:#1BFF07;
+    background-color: black;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.hero__p{
+    width: 430px;
+    position: absolute;
+    left: 125px;
+    bottom: 328px;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+}
+.hero__h1{
+    position: absolute;
+    left: 119px;
+    top: 466px;
+    font-size: 80px;
+    width: 919px;
+    line-height: 70px;
+    letter-spacing: -0.03em;
+    color:#1BFF07;
+}
+.hero__nav_button{
+    margin-left: 50px;
+}
+.hero__nav_links{
+    float: right;
+}
