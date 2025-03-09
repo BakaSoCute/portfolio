@@ -24,8 +24,18 @@ body{
     gap: 20px;
     /* gap: ; */
 }
-
-
+.gallery__slide{
+    height: 500px;
+}
+.box{
+    height: 100%;
+}
+.box_green{
+    background-color: green;
+}
+.box_red{
+    background-color: red;
+}
 
 
 
