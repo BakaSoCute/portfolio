@@ -7,7 +7,6 @@ body{
 .container{
     max-width: 960px;
     margin: 0 auto;
-    background-color: blueviolet;
 }
 /* .box{
     width: calc(50% - 10px);
@@ -27,12 +26,16 @@ body{
 .gallery{
     position: relative;
 }
-.gallery__title{
+.gallery__title-wrapper{
     position: absolute;
+    width: 100%;
     left: 30px;
     top: 30px;
-    color: white;
     z-index: 100;
+}
+.gallery__title{
+    color: white;
+
 }
 .gallery__slides{
     height: 500px;
@@ -46,17 +49,19 @@ body{
     width: 100%;
     opacity: 0;
 }
-.gallery__controls{
+.gallery__control-wrapper{
     position: absolute;
+    width: 100%;
+    bottom: 50%;
+}
+.gallery__controls{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    bottom: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 .box{
     height: 100%;
+    width: 100%;
 }
 .box_green{
     background-color: green;
