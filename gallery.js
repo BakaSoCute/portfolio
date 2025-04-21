@@ -4,6 +4,7 @@ const slidesNodes = Array.from(document.querySelectorAll('.gallery__slide'));
 console.log(slidesNodes);
 const prevButtonNode = document.querySelector('.gallery__control-prev');
 const nextButtonNode = document.querySelector('.gallery__control-next');
+const createImgNode = document.getElementById("createImg");
 let activeId;
 
 init();
@@ -35,3 +36,16 @@ function getPrevId() {
 function getNextId() {
     return activeId === (slidesNodes.length - 1) ? 0: activeId + 1;
 }
+fetch("https://dog.ceo/api/breeds/image/random")
+.then ((response) => {
+    return response.json();
+})
+.then((data) => {
+    console.log(data.message);
+    const elem = document.createElement("img")
+    elem.src = data.message;
+    createImgNode.appendChild(elem)
+})
+
+
+
